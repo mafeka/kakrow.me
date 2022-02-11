@@ -1,0 +1,151 @@
+/* Colors and shit */
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #ebebeb;
+    --color-dark-grey: #4e4848;
+    --padding-default: 1rem 2rem;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+a {
+    color: deeppink;
+}
+
+a:visited {
+    color: MediumVioletRed;
+}
+
+img {
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Page Header */
+
+header.of-the-site h1 {
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+
+header.of-the-site * {
+    line-height: .95;
+}
+
+#sublines ul {
+    padding: 0;
+    margin: 1rem 0;
+    line-height: .9;
+}
+
+#sublines ul li {
+    display: inline-block;
+    margin-right: .5em;
+    background-color: inherit;
+    margin-bottom: .5rem;
+}
+
+#sublines ul li::before {
+    content: "\261E";
+    display: inline;
+    margin-right: .1em;
+    font-size: 1.5em;
+    height: 1em;
+}
+
+#sublines ul > li:last-child{
+    margin-right: 0;
+}
+
+.is-monospaced {
+    font-family: monospace;
+}
+
+#links ul li a {
+    display: inline-block;
+    margin-right: .75rem;
+    line-height: 1.5;
+}
+
+/* Typography */
+
+html {
+    font-size: 12px;
+    font-family: serif;
+}
+
+@media screen and (min-width: 481px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+.text-2xl   { font-size: 4rem;}
+.text-xl    { font-size: 2rem;}
+.text-l     { font-size: 1.35rem;}
+.text-m     { font-size: 1rem;}
+.text-s     { font-size: .9rem;}
+
+@media screen and (min-width: 481px) {
+    .text-2xl { font-size: 5rem;}
+    .text-xl { font-size: 2.5rem;}
+    .text-l {font-size: 1.35rem;}
+    .text-m { font-size: 1rem;}
+    .text-s { font-size: .9rem;}
+}
+
+
+body > * {
+    max-width: 47rem;
+}
+
+/* Layout */
+body {
+    padding: .5rem .5rem;
+}
+
+@media screen and (min-width: 481px) {
+    body {
+        padding: 2rem 2rem;
+    }
+}
+
+/* Stylings */
+
+hr {
+    margin-left: 0;
+    background-color: var(--color-dark-grey);
+    height: .2rem;
+    border: none;
+}
+
+.dsp-inline {
+    display: inline;
+}
+
+.pdg-none {
+    padding: 0;
+}
+
+.with-brackets::before {
+    content: "[";
+}
+
+.with-brackets::after {
+    content: "]";
+}
+
+/* Articles */
+
+.is-a-thought header {
+    margin-bottom: .5rem;
+}
+
+.is-a-thought header .title {
+    margin: .5em 0;
+    padding: 0;
+}

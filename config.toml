@@ -1,0 +1,4 @@
+baseURL = 'https://kakrow.me'
+languageCode = 'en-us'
+title = 'Felix Kakrow'
+theme = "kakrow.me"

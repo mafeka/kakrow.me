@@ -1,0 +1,46 @@
+{{ partial "header" . }}
+<header class="of-the-site text-l">
+    <h1 class="text-2xl is-monospaced ">{{ .Title }}</h1>
+</header>
+
+<section id="links" class="text-l">
+    <ul class="pdg-none" >
+        {{ range .Params.links }}
+        <li class="dsp-inline">
+            <a class="with-brackets" target="_blank" href="{{ .url }}">
+                ♥ {{ .title }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+
+<img src="awesome-image-of-me.jpg" />
+
+{{/*  <hr >  */}}
+
+<section id="sublines" class="text-l">
+    <ul>
+        {{ range .Params.sublines }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</section>
+{{/*
+<section id="thoughts">
+    <h3 class="text-xl is-monospaced title">Thoughts</h3>
+    <article class="is-a-thought">
+        <header class="text-l">
+            <date class="is-monospaced">2021-02-05</date>
+            <h4 class="is-monospaced title">
+                Getting my feet wet with AlpineJs
+            </h4>
+            <div class="intro">
+                <span>A few observations about AlpineJs and all the things I found ejoyable about it.</span>
+            </div>
+            <a href="#">Read the entire thing →</a>
+        </header>
+    </article>  */}}
+</section>
+
+{{ partial "footer" . }}
